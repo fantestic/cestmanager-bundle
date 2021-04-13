@@ -13,7 +13,7 @@ use Fantestic\CestManager\Contract\CollectionInterface;
  * It adds a configured prefix/suffix to the fully Qualified Classname of the Cests.
  * The prefix/suffix can be injected from the service-container via config.
  * 
- * @package Fantestic/ApiPlatform
+ * @package Fantestic/CestManagerBundle
  * @author Gerald Baumeister <gerald@fantestic.io>
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */

@@ -15,7 +15,7 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 /**
  * CommandHandler to update a Scenario.
  * 
- * @package Fantestic/ApiPlatform
+ * @package Fantestic/CestManagerBundle
  * @author Gerald Baumeister <gerald@fantestic.io>
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */

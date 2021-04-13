@@ -10,7 +10,7 @@ use Fantestic\CestManagerBundle\Domain\ValueObject\Collection\Id as CollectionId
  * and a Suffix (most commonly Cest), we require a way to create CollectionIds that don't
  * have knowledge about the configured prefix/suffix.
  * 
- * @package Fantestic/ApiPlatform
+ * @package Fantestic/CestManagerBundle
  * @author Gerald Baumeister <gerald@fantestic.io>
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */

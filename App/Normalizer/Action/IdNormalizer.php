@@ -16,7 +16,7 @@ use Symfony\Component\Serializer\Exception\ExceptionInterface;
 /**
  * 
  * 
- * @package Fantestic/ApiPlatform
+ * @package Fantestic/CestManagerBundle
  * @author Gerald Baumeister <gerald@fantestic.io>
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */

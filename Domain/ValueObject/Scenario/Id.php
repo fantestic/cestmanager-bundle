@@ -8,7 +8,7 @@ use Fantestic\CestManagerBundle\Domain\Exception\ValueObject\InvalidIdentifierSt
 /**
  * Identifier for a Scenario
  * 
- * @package Fantestic/ApiPlatform
+ * @package Fantestic/CestManagerBundle
  * @author Gerald Baumeister <gerald@fantestic.io>
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */
