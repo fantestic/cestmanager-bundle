@@ -1,0 +1,31 @@
+Fantestic\CestManagerBundle\Domain\Entity\Collection:
+  description: 'A collection of Scenarios'
+  
+  id:
+    generationStrategy: none
+
+  properties:
+    id:
+      identifier: true
+      generationStrategy: none
+      writeable: true
+    scenarios:
+      subresource:
+        resourceClass: 'Fantestic\CestManagerBundle\Domain\Entity\Scenario'
+        collection: true
+        identifiers:
+          - ['id', 'Fantestic\CestManagerBundle\Domain\ValueObject\Collection\Id']
+      
+  collectionOperations:
+    get:
+      method: 'GET'
+    post:
+      method: 'POST'
+  
+  itemOperations:
+    get:
+      method: 'GET'
+    put:
+      method: 'PUT'
+    delete:
+      method: 'DELETE'

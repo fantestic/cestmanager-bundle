@@ -1,0 +1,39 @@
+services:
+    Fantestic\CestManagerBundle\App\Normalizer\Collection\IdDenormalizer:
+        tags:
+            - { name: api_platform.identifier.denormalizer }
+    Fantestic\CestManagerBundle\App\Normalizer\Collection\IdNormalizer:
+        tags:
+            - { name: api_platform.identifier.normalizer }
+    Fantestic\CestManagerBundle\App\Normalizer\Action\IdNormalizer:
+        tags:
+            - { name: api_platform.identifier.normalizer }
+    Fantestic\CestManagerBundle\App\Normalizer\Scenario\IdNormalizer:
+        tags:
+            - { name: api_platform.identifier.normalizer }
+    Fantestic\CestManagerBundle\App\Normalizer\Scenario\IdDenormalizer:
+        tags:
+            - { name: api_platform.identifier.denormalizer }
+
+
+    App\:
+        resource: '../'
+        exclude:
+            - '../DependencyInjection/'
+            - '../Resources/'
+            - '../FantesticCestManagerBundle.php'
+            - '../Domain/Entity/'
+            - '../Domain/ValueObject/'
+
+
+    App\CestManager\Infra\FantesticBridge\CollectionAdapterFactory:
+        arguments:
+            - 'Wol\Test\Suites\Acceptance\'
+            - 'Cest'
+    App\CestManager\Infra\FantesticBridge\CollectionIdFactory:
+        arguments:
+            - 'Wol\Test\Suites\Acceptance\'
+            - 'Cest'
+    App\CestManager\Infra\ActionProvider\ActionProviderCollection:
+        arguments:
+            - !tagged_iterator fantestic.action_provider

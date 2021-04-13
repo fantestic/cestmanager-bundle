@@ -1,0 +1,13 @@
+Fantestic\CestManagerBundle\Domain\Entity\Datasource:
+  description: 'A Datasource is a fixture resource.'
+
+  properties:
+    id:
+      identifier: true
+      generationStrategy: none
+  collectionOperations:
+    get:
+      method: 'GET'
+  itemOperations:
+    get:
+      method: 'GET'
